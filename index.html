@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050506">
+<title>ROHAN'S LEGENDARY DAY</title>
+<meta name="description" content="A birthday experience for Rohan Palui, Core Member of WE ARE LEGEND.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- INTRO -->
+<div id="intro" aria-label="Cinematic intro">
+  <button id="skipIntro" class="ghost small">Skip intro</button>
+  <div id="introLines">
+    <p class="il gold sm">WE ARE LEGEND</p>
+    <p class="il sm">PRESENTS</p>
+    <p class="il gold big">27 • 11 • 2014</p>
+    <p class="il">A LEGEND WAS BORN</p>
+    <p class="il gold huge">ROHAN PALUI</p>
+    <p class="il sm">CORE MEMBER</p>
+  </div>
+  <button id="enterBtn" class="btn gold-btn il-btn" hidden>🎁 ENTER ROHAN'S LEGENDARY DAY</button>
+</div>
+
+<div id="site" hidden>
+<header class="nav glass">
+  <a href="#home" class="logo" id="logo" aria-label="WE ARE LEGEND logo, back to top">W ♥ L</a>
+  <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#profile">Profile</a><a href="#photos">Photos</a><a href="#awards">Awards</a><a href="#stats">Stats</a><a href="#friends">Friends</a><a href="#letter">Letter</a><a href="#surprise">Surprise</a><a href="#game">Game</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="crown" aria-hidden="true">👑</div>
+  <p class="date gold">27 • 11 • 2014</p>
+  <h1>HAPPY<br>BIRTHDAY<br>ROHAN!</h1>
+  <p class="tag">ROHAN / CORE MEMBER</p>
+  <p class="sub">Celebrating the 12th birthday of a true Core Member of WE ARE LEGEND.</p>
+  <div class="row">
+    <a class="btn gold-btn" href="#profile">Start the Journey ↓</a>
+    <button class="btn ghost" id="musicBtn">🎵 Play Music</button>
+  </div>
+  <div class="countdown glass" aria-label="Countdown to next birthday">
+    <p class="label">UNTIL ROHAN'S NEXT BIRTHDAY</p>
+    <p id="cd" class="cd" aria-live="off">--</p>
+  </div>
+</section>
+
+<section id="profile" class="sec reveal">
+  <h2>ROHAN'S LEGEND PROFILE</h2>
+  <div class="profile glass">
+    <figure class="tilt" id="profilePhoto"></figure>
+    <div>
+      <h3>ROHAN PALUI</h3><p class="gold">CORE MEMBER • WE ARE LEGEND</p>
+      <div class="info" id="infoCards"></div>
+    </div>
+  </div>
+</section>
+
+<section id="friendship" class="sec reveal">
+  <h2>A FRIENDSHIP THAT BECAME A STORY</h2>
+  <p class="since gold">SINCE 2017</p>
+  <p class="lead">A friendship that started in 2017 and grew through games, laughter, competition and countless shared moments. From UNO and chess battles to cricket and badminton, Rohan has been an important part of our journey.</p>
+  <div class="meter glass">
+    <div class="mrow"><span>SUBHAJIT ❤️ ROHAN</span><strong id="mPct">0%</strong></div>
+    <div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-label="Friendship meter"><i id="mFill"></i></div>
+    <p class="label">LEGENDARY FRIENDSHIP</p>
+  </div>
+</section>
+
+<section id="photos" class="sec reveal">
+  <h2>ROHAN IN FOCUS 📸</h2>
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<section id="cricket" class="sec reveal">
+  <h2>🏏 CRICKET SPOTLIGHT</h2>
+  <div class="board glass">
+    <svg class="bat" viewBox="0 0 120 120" aria-hidden="true"><g class="swing"><rect x="52" y="6" width="16" height="70" rx="6" fill="#d4af37"/><rect x="57" y="76" width="6" height="30" rx="3" fill="#f5e7b0"/></g><circle class="ball" cx="96" cy="100" r="9" fill="#fff"/></svg>
+    <p class="label">SIGNATURE GAME</p>
+    <p class="label">CRICKET SCORE</p>
+    <p class="huge-score"><span id="crNum">0</span> / 100</p>
+    <p class="king">THE KING OF THE FIELD</p>
+    <p class="note">Cricket is officially Rohan's highest fun-stat.</p>
+  </div>
+</section>
+
+<section id="awards" class="sec reveal">
+  <button id="hiddenStar" class="star" aria-label="Hidden star">⭐</button>
+  <h2>HALL OF FAME 🏆</h2>
+  <div class="cards" id="awardCards"></div>
+  <p id="awardEmpty" class="note" hidden>Awards PDF can be added later.</p>
+  <div class="row"><a id="pdfBtn" class="btn ghost" href="assets/rohan-awards.pdf" target="_blank" rel="noopener" hidden>📄 Open Awards PDF</a></div>
+</section>
+
+<section id="stats" class="sec reveal">
+  <h2>ROHAN'S STATS 📊</h2>
+  <div class="stats glass" id="statBars"></div>
+  <div class="score glass">
+    <p class="label">OVERALL FUN SCORE</p>
+    <p class="huge-score" id="overall">0.0</p>
+    <p class="gold">👑 LEGEND STATUS: CONFIRMED</p>
+  </div>
+</section>
+
+<section id="friends" class="sec reveal">
+  <h2>FROM THE CREW 💬</h2>
+  <div class="tabs" id="friendTabs" role="tablist" aria-label="Friends"></div>
+  <blockquote class="glass msg" id="friendMsg" role="tabpanel" aria-live="polite"></blockquote>
+</section>
+
+<section id="forever" class="forever reveal">
+  <h2>2017 → FOREVER</h2>
+  <p>Some people become memories.</p>
+  <p>Some become part of the story.</p>
+  <p class="gold fin">ROHAN —<br>A part of the WE ARE LEGEND story.</p>
+</section>
+
+<section id="letter" class="sec reveal">
+  <h2>HOD BIRTHDAY LETTER 💌</h2>
+  <article class="paper" id="letterPaper">
+    <div class="seal" aria-hidden="true">W♥L</div>
+    <p class="lh">WE ARE LEGEND</p><p class="ls">OFFICIAL BIRTHDAY COMMUNICATION</p>
+    <h3>Formal Birthday Letter</h3>
+    <p class="meta">Date: 27 November 2026<br>From: Subhajit Das — HOD, WE ARE LEGEND<br>To: Rohan Palui — Core Member</p>
+    <p>Dear Rohan,</p>
+    <p>On the occasion of your 12th birthday, I extend my warmest wishes to you on behalf of WE ARE LEGEND.</p>
+    <p>Since 2017, our friendship has grown through games, laughter, competition and countless shared moments. Your place as a Core Member of WE ARE LEGEND makes you an important part of our group and its memories.</p>
+    <p>May the coming year bring you happiness, confidence, success and many new reasons to smile. Continue to participate, enjoy the journey and create memories with the people around you.</p>
+    <p>Once again, wishing you a very Happy Birthday. May your 12th year be truly legendary.</p>
+    <p>With best wishes,</p>
+    <p class="sig">Subhajit Das</p><p class="meta">HOD<br>WE ARE LEGEND</p>
+  </article>
+  <div class="row noprint"><button class="btn gold-btn" data-open="letterModal">Open Full Letter</button><button class="btn ghost" id="printBtn">🖨 Print</button></div>
+</section>
+
+<section id="surprise" class="sec reveal center">
+  <h2>THE FINAL SURPRISE</h2>
+  <p class="lead">There is something waiting for you...</p>
+  <button id="gift" class="gift" aria-label="Open the gift">🎁</button>
+  <p id="giftText" class="note">Tap the gift to begin.</p>
+</section>
+
+<section id="final" class="final center">
+  <p class="label">ONE LAST THING...</p>
+  <h2>🎉 HAPPY BIRTHDAY<br>ROHAN!</h2>
+  <p class="fin">Keep smiling.<br>Keep creating memories.<br>Keep being a LEGEND. 👑</p>
+  <p class="gold">— Subhajit Das<br>HOD, WE ARE LEGEND</p>
+  <button class="btn ghost" id="secretBtn">🔐 Secret Mode</button>
+</section>
+
+<section id="game" class="sec reveal">
+  <h2>🏏 HIT A CENTURY</h2>
+  <p class="lead">Click the moving ball when it reaches the bat zone.</p>
+  <div class="gamebox glass">
+    <div class="gstat"><span>SCORE: <b id="gScore">0</b></span><span>BALLS: <b id="gBalls">0</b>/10</span></div>
+    <div id="pitch" class="pitch" role="button" tabindex="0" aria-label="Pitch: tap when the ball is in the bat zone">
+      <div class="zone"></div><div class="bat2">🏏</div><div id="gball" class="gball"></div>
+      <p id="gMsg" class="gmsg"></p>
+    </div>
+    <button class="btn gold-btn" id="gStart">Start</button>
+    <p id="gResult" class="note" aria-live="polite"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p class="logo-f">ROHAN'S LEGENDARY DAY</p>
+  <p>Made with ❤️ for Rohan<br>WE ARE LEGEND</p>
+  <p class="note">Find the hidden ⭐</p>
+  <button class="link" id="replay">Replay intro</button>
+</footer>
+</div>
+
+<!-- MODALS -->
+<div class="modal" id="letterModal" role="dialog" aria-modal="true" aria-label="Formal birthday letter" hidden><div class="mbox"><button class="x" data-close aria-label="Close">✕</button><div id="letterClone"></div></div></div>
+<div class="modal" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate" hidden><div class="mbox cert"><button class="x" data-close aria-label="Close">✕</button><div id="certBody"></div></div></div>
+<div class="modal" id="eggModal" role="dialog" aria-modal="true" aria-label="Easter egg" hidden><div class="mbox egg"><button class="x" data-close aria-label="Close">✕</button><div id="eggBody"></div></div></div>
+<div class="modal" id="codeModal" role="dialog" aria-modal="true" aria-label="Enter the code" hidden><div class="mbox egg"><button class="x" data-close aria-label="Close">✕</button>
+  <h3>ENTER THE CODE</h3><form id="codeForm"><input id="codeIn" inputmode="numeric" autocomplete="off" aria-label="Secret code" maxlength="8"><button class="btn gold-btn" type="submit">Unlock</button></form><p class="note">Hint: DDMMYYYY<br>Rohan's birthday.</p><p id="codeErr" class="note" aria-live="polite"></p></div></div>
+<div class="modal viewer" id="viewer" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <div class="vtop"><span id="vCount">01 / 03</span><button class="btn ghost small" data-close>X Close</button></div>
+  <div class="vimg" id="vImg"></div><p id="vCap" class="vcap"></p>
+  <div class="vnav"><button class="btn ghost" id="vPrev">← Previous</button><button class="btn ghost" id="vNext">Next →</button></div>
+</div>
+<div id="wait" class="wait" hidden><p>But wait...</p><p class="gold">one last thing.</p></div>
+<script src="script.js"></script>
+</body>
+</html>
