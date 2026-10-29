@@ -28,7 +28,7 @@ const DATA = {
     ["rohan-2.jpg", "Chief Operations Officer(COO)"],
     ["rohan-3.jpg", "THE MOMENT"]
   ],
-  stats: { Cricket: 100, UNO: 94, Chess: 81, Badminton: 99, Comedy: 96, Friendship: 100, "Legend Level": 100 },
+  stats: { Cricket: 100, UNO: 94, Chess: 69, Badminton: 99, Comedy: 96, Friendship: 100, "Legend Level": 100 },
   statIcons: { Cricket: "🏏", UNO: "🃏", Chess: "♟️", Badminton: "🏸", Comedy: "😂", Friendship: "❤️", "Legend Level": "👑" },
   gameStats: ["Cricket", "UNO", "Chess", "Badminton"],  // cricket must stay the highest of these
   awards, friends,
