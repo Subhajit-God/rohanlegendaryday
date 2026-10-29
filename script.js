@@ -8,9 +8,9 @@ const awards = [];
 // Add anyone here and they appear automatically (e.g. Rohan: {role:"CORE MEMBER", message:"..."}).
 // Replace these placeholder messages with the friends' own words.
 const friends = {
-  Subhajit: { role: "HOD", message: "Happy Birthday, Rohan! Keep enjoying the games and keep being a legend. — Edit this message in script.js" },
+  Subhajit: { role: "HOD, CEO, CTO", message: "Happy Birthday, Rohan! Keep enjoying the games and keep being a legend. — Edit this message in script.js" },
   Sounak: { role: "ADMIN", message: "Happy Birthday, Rohan! Wishing you a great year ahead. — Edit this message in script.js" },
-  Arghya: { role: "HONORARY MEMBER", message: "Happy Birthday, Rohan! Have an amazing day. — Edit this message in script.js" }
+  Arghya: { role: "Director Of Sports And Events", message: "Happy Birthday, Rohan! Have an amazing day. — Edit this message in script.js" }
 };
 
 const DATA = {
@@ -18,17 +18,17 @@ const DATA = {
   birthday: "27 November 2014",
   birthMonth: 11, birthDay: 27,          // used for the countdown
   age: 12,
-  role: "CORE MEMBER",
+  role: "Chief Operations Officer(COO)",
   group: "WE ARE LEGEND",
   friendshipSince: 2017,
   activities: "Cricket • UNO • Chess • Badminton",
   status: "LEGENDARY • ACTIVE",
   photos: [
     ["rohan-1.jpg", "THE LEGEND"],
-    ["rohan-2.jpg", "THE CORE MEMBER"],
+    ["rohan-2.jpg", "Chief Operations Officer(COO)"],
     ["rohan-3.jpg", "THE MOMENT"]
   ],
-  stats: { Cricket: 100, UNO: 94, Chess: 91, Badminton: 89, Comedy: 96, Friendship: 100, "Legend Level": 100 },
+  stats: { Cricket: 100, UNO: 94, Chess: 81, Badminton: 99, Comedy: 96, Friendship: 100, "Legend Level": 100 },
   statIcons: { Cricket: "🏏", UNO: "🃏", Chess: "♟️", Badminton: "🏸", Comedy: "😂", Friendship: "❤️", "Legend Level": "👑" },
   gameStats: ["Cricket", "UNO", "Chess", "Badminton"],  // cricket must stay the highest of these
   awards, friends,
