@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10264d">
+<title>How Well Do You Know Subhajit Das?</title>
+<style>
+:root{--navy:#10264d;--blue:#2563eb;--gold:#f5c451;--ink:#172033;--muted:#64748b;--paper:#f4f7fc;--line:#dce5f2;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#dbeafe,transparent 35%),var(--paper);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}
+header{background:linear-gradient(135deg,#0b1732,var(--navy));color:white;padding:24px 16px 30px;text-align:center;border-bottom:4px solid var(--gold)}
+.brand{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:#f8d878;font-weight:800}.hero-title{font-size:clamp(1.8rem,5vw,3rem);line-height:1.12;margin:10px auto;max-width:760px}.subtitle{color:#dbeafe;max-width:650px;margin:0 auto}
+.wrap{max-width:850px;margin:22px auto;padding:0 14px 44px}.card{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:clamp(18px,4vw,30px);box-shadow:0 12px 35px #10264d0d;margin-bottom:16px}
+h2{margin:0 0 12px;color:var(--navy)}p{line-height:1.6}.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.fact{background:#f1f6ff;padding:13px;border-radius:14px}.fact strong{display:block;color:var(--navy);font-size:.85rem}.fact span{font-size:.95rem}
+label{display:block;font-weight:700;margin:14px 0 6px}input{width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:12px;font:inherit}
+button{border:0;border-radius:13px;padding:13px 18px;font:inherit;font-weight:750;cursor:pointer;transition:transform .12s,opacity .12s}button:active{transform:scale(.98)}button:disabled{opacity:.45;cursor:not-allowed}.primary{background:var(--blue);color:white}.secondary{background:#e8eef8;color:var(--navy)}.gold{background:var(--gold);color:#332400}.button-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.progress-top{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.9rem;font-weight:700}.bar{height:9px;background:#e6edf7;border-radius:20px;overflow:hidden;margin:10px 0 24px}.bar>div{height:100%;background:linear-gradient(90deg,var(--blue),#60a5fa);width:0;transition:width .2s}.question{font-size:1.25rem;line-height:1.4;font-weight:800;color:var(--navy);margin:12px 0 18px}.answers{display:grid;gap:10px}.answer{background:#fff;border:1px solid #cbd5e1;text-align:left;display:flex;align-items:center;gap:12px;color:var(--ink);font-weight:600}.answer .letter{display:grid;place-items:center;flex:0 0 32px;height:32px;border-radius:9px;background:#edf3ff;color:var(--blue)}.answer.selected{border:2px solid var(--blue);background:#eff6ff}.small{font-size:.87rem;color:var(--muted)}.hidden{display:none!important}
+.result-big{text-align:center;padding:18px;background:linear-gradient(145deg,#eff6ff,#fff8df);border:1px solid #f3d88a;border-radius:18px}.score{font-size:3rem;font-weight:900;color:var(--navy);line-height:1.05}.grade{font-size:1.1rem;font-weight:850;color:#9a6700}.certificate{border:8px double #c99b2e;padding:22px;text-align:center;background:linear-gradient(150deg,#fff,#fffaf0);border-radius:8px;color:#172033}.cert-kicker{letter-spacing:.16em;text-transform:uppercase;color:#9a7217;font-weight:800;font-size:.76rem}.cert-name{font-family:Georgia,serif;font-size:clamp(1.6rem,6vw,2.5rem);font-weight:700;color:#10264d;margin:10px 0}.cert-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;text-align:left;margin:18px 0}.cert-item{padding:10px;background:#fff;border:1px solid #ead9a5;border-radius:8px}.cert-item span{display:block;font-size:.75rem;color:#776333}.cert-item strong{overflow-wrap:anywhere}.letter{white-space:pre-line;background:#f8fafc;border-left:4px solid var(--gold);padding:18px;border-radius:10px;line-height:1.75}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:18px 10px 28px}.site-nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:12px;background:#fff;border-bottom:1px solid var(--line)}.site-nav a,.footer-links a{color:var(--navy);text-decoration:none;font-weight:750;padding:8px 10px;border-radius:10px}.site-nav a:hover,.footer-links a:hover{background:#eff6ff}.footer-links{margin-bottom:8px}.home-link{display:inline-block;text-align:center;text-decoration:none;background:#e8eef8;color:var(--navy);border-radius:13px;padding:13px 18px;font-weight:750}
+@media(max-width:520px){.facts{grid-template-columns:1fr 1fr}.card{border-radius:17px}.button-row button{flex:1 1 140px}.cert-grid{gap:6px}.cert-item{padding:8px}}
+@media print{body{background:white}.no-print,header,footer,#welcome,#quiz,#letterCard{display:none!important}.wrap{max-width:none;margin:0;padding:0}.card{box-shadow:none;border:0;padding:0}.certificate{border:8px double #c99b2e;min-height:90vh;display:flex;flex-direction:column;justify-content:center}}
+</style>
+</head>
+<body><nav class="site-nav" aria-label="Birthday journey"><a href="start.html">🏁 Start</a><a href="celebration.html">✨ Celebration</a><a href="friendship.html">📸 Memories</a><a href="wishes.html">💌 Wishes</a><a href="letter.html">✉️ Letter</a><a href="gifts.html">🎁 Gifts</a><a href="future.html">🔮 Future</a><a href="quiz.html">🧠 Quiz</a><a href="award.html">🏆 Award</a><a href="share-card.html">📱 Share Card</a><a href="index.html">🏠 Home</a></nav><section class="music-dock" aria-label="Birthday soundtrack"><strong>🎵 Birthday soundtrack</strong><button class="btn small" id="musicPlay" type="button">▶ Play</button><button class="btn small" id="musicPause" type="button">⏸ Pause</button><label for="musicVolume">Volume</label><input id="musicVolume" type="range" min="0" max="1" step="0.05" value="0.65"><audio id="birthdayAudio" preload="none" loop src="birthday-music.mp3"></audio><span id="musicStatus" class="small-note" aria-live="polite">Music is paused until you press Play.</span></section><script>(function(){const a=document.getElementById('birthdayAudio'),p=document.getElementById('musicPlay'),q=document.getElementById('musicPause'),v=document.getElementById('musicVolume'),s=document.getElementById('musicStatus');a.volume=Number(v.value);p.addEventListener('click',async()=>{try{await a.play();s.textContent='Now playing: birthday-music.mp3'}catch(e){s.textContent='Could not play the file. Check that birthday-music.mp3 is beside this page.'}});q.addEventListener('click',()=>{a.pause();s.textContent='Music paused.'});v.addEventListener('input',()=>a.volume=Number(v.value))})();</script>
+<header>
+  <div class="brand">A Personal Knowledge Challenge</div>
+  <h1 class="hero-title">How Well Do You Know<br>Subhajit Das?</h1>
+  <p class="subtitle">50 questions. One legend. How much do you really know?</p>
+</header>
+<main class="wrap">
+  <section class="card" id="welcome">
+    <h2>Welcome to the challenge 👋</h2>
+    <p>Answer questions about Subhajit's background, interests, goals and favourite things. Your result and certificate are created on this device.</p>
+    <div class="facts">
+      <div class="fact"><strong>School</strong><span>Ramjibanpur Babulal Institution</span></div>
+      <div class="fact"><strong>Hometown</strong><span>Srinagar, Paschim Medinipur</span></div>
+      <div class="fact"><strong>Favourite colour</strong><span>Blue</span></div>
+      <div class="fact"><strong>Favourite game</strong><span>Minecraft</span></div>
+    </div>
+    <label for="playerName">Player's full name</label><input id="playerName" maxlength="70" placeholder="Enter your name" autocomplete="name">
+    <label for="playerFather">Player's father's name</label><input id="playerFather" maxlength="70" placeholder="Enter father's name">
+    <p class="small">Your details are used only to create the certificate in this browser. This page does not send them to a server.</p>
+    <div class="button-row"><button class="primary" id="startBtn">Start 50-question quiz →</button></div>
+    <div class="button-row"><a class="home-link" href="index.html">← Back to Rohan’s Legendary Day</a></div>
+  </section>
+
+  <section class="card hidden" id="quiz">
+    <div class="progress-top"><span id="progressLabel">Question 1 of 50</span><span id="answeredLabel">0 answered</span></div>
+    <div class="bar"><div id="progressBar"></div></div>
+    <div class="small" id="categoryLabel">About Subhajit</div>
+    <div class="question" id="questionText"></div>
+    <div class="answers" id="answers"></div>
+    <div class="button-row"><button class="secondary" id="backBtn">← Previous</button><button class="primary" id="nextBtn" disabled>Next question →</button><button class="gold hidden" id="finishBtn">Finish quiz ✓</button></div>
+    <p class="small">You can go back and change an answer before finishing.</p>
+  </section>
+
+  <section class="card hidden" id="results">
+    <h2>Your result</h2>
+    <div class="result-big"><div class="score" id="scoreText">0/50</div><div id="percentageText">0%</div><div class="grade" id="gradeText"></div><p id="performanceText"></p></div>
+    <div class="button-row no-print"><button class="primary" id="shareBtn">Share result ↗</button><button class="secondary" id="printBtn">Print / Save PDF</button><button class="secondary" id="reviewBtn">Review answers</button></div>
+    <p class="small">Certificate details use the name and father's name you entered on the welcome screen.</p>
+  </section>
+
+  <section class="card hidden" id="certificateCard">
+    <div class="certificate" id="certificate">
+      <div class="cert-kicker">Certificate of Achievement</div>
+      <h2 style="margin:10px 0 0">HOW WELL DO YOU KNOW SUBHAJIT DAS?</h2>
+      <p>This certificate is proudly presented to</p>
+      <div class="cert-name" id="certPlayer">Player Name</div>
+      <p>Father's name: <strong id="certFather">—</strong></p>
+      <p>for completing the personal knowledge challenge about Subhajit Das.</p>
+      <div class="cert-grid">
+        <div class="cert-item"><span>Total questions</span><strong id="certTotal">50</strong></div>
+        <div class="cert-item"><span>Correct answers</span><strong id="certCorrect">0 / 50</strong></div>
+        <div class="cert-item"><span>Percentage</span><strong id="certPercent">0%</strong></div>
+        <div class="cert-item"><span>Grade</span><strong id="certGrade">E — Mystery Solver</strong></div>
+        <div class="cert-item" style="grid-column:1/-1"><span>Performance</span><strong id="certPerformance">Mystery Solver</strong></div>
+      </div>
+      <p style="font-family:Georgia,serif;font-style:italic">“Every answer brings you one step closer to knowing the legend.”</p>
+      <p class="cert-kicker">Issued digitally • Personal quiz certificate</p>
+    </div>
+    <div class="button-row no-print"><button class="primary" id="certPrintBtn">Print / Save certificate PDF</button><button class="secondary" id="certShareBtn">Share certificate result</button></div>
+  </section>
+
+  <section class="card hidden" id="letterCard">
+    <h2>A personal letter for you ✉️</h2>
+    <div class="letter" id="personalLetter"></div>
+    <div class="button-row no-print"><button class="secondary" id="letterShareBtn">Share letter</button></div>
+  </section>
+
+  <section class="card hidden" id="reviewCard">
+    <h2>Answer review</h2><div id="reviewList"></div>
+    <div class="button-row no-print"><button class="secondary" id="backToResultBtn">Back to result</button></div>
+  </section>
+</main>
+<div class="page-actions no-print"><a class="btn" href="future.html">← Future Message</a><a class="btn gold-btn" href="award.html">Next: Birthday Award →</a></div>
+<footer class="site-credit"><p>Made by Subhajit Das with love for Rohan Palui. ❤️</p><p class="journey-links"><a href="start.html">Start again</a> · <a href="index.html">Main website</a> · <a href="quiz.html">Take the quiz</a></p></footer>
+<script>
+const questions = [
+{c:"Basic facts",q:"What is Subhajit's full name?",o:["Subhajit Das","Subhajit Dutta","Subhajit Dey","Subhajit Roy"],a:0},
+{c:"Basic facts",q:"What is Subhajit's father's name?",o:["Sujit Das","Suman Das","Sunil Das","Sourav Das"],a:0},
+{c:"Basic facts",q:"When is Subhajit's date of birth?",o:["3 March 2012","3 May 2012","30 March 2012","3 March 2011"],a:0},
+{c:"Basic facts",q:"Which school does Subhajit attend?",o:["Ramjibanpur Babulal Institution","Midnapore Collegiate School","Kharagpur High School","Vidyasagar Shishu Niketan"],a:0},
+{c:"Basic facts",q:"Where is Subhajit's hometown?",o:["Srinagar, Paschim Medinipur","Kolkata, West Bengal","Durgapur, West Bengal","Cuttack, Odisha"],a:0},
+{c:"Basic facts",q:"Which Indian state is Paschim Medinipur in?",o:["West Bengal","Odisha","Bihar","Jharkhand"],a:0},
+{c:"School life",q:"Which class is Subhajit in according to the shared profile?",o:["Class 8","Class 6","Class 9","Class 10"],a:0},
+{c:"School life",q:"Which education board is associated with Subhajit's school studies?",o:["WBBSE","CBSE","ICSE","NIOS"],a:0},
+{c:"School life",q:"Which two subjects are among Subhajit's favourites?",o:["Geography and English","Physics and Chemistry","History and Sanskrit","Biology and Mathematics"],a:0},
+{c:"School life",q:"What is Subhajit's stated study goal for Class 8?",o:["Reach 1020 out of 1200","Reach 400 out of 1200","Stop studying geography","Score exactly 500 out of 1200"],a:0},
+{c:"Interests",q:"Which activity is one of Subhajit's hobbies?",o:["Coding","Deep-sea diving","Professional racing","Mountain rescue"],a:0},
+{c:"Interests",q:"Which of these is also one of his interests?",o:["Technology","Horse breeding","Opera singing","Shipbuilding"],a:0},
+{c:"Interests",q:"Which colour is Subhajit's favourite?",o:["Blue","Orange","Pink","Brown"],a:0},
+{c:"Interests",q:"Which game does Subhajit like?",o:["Minecraft","Valorant","Clash Royale","Candy Crush"],a:0},
+{c:"Interests",q:"Which food is one of Subhajit's favourites?",o:["Biryani","Sushi","Tacos","Falafel"],a:0},
+{c:"Interests",q:"Which chicken dish is among his favourites?",o:["Chicken chaap","Chicken ramen","Chicken schnitzel","Chicken pot pie"],a:0},
+{c:"Interests",q:"Which vegetarian food is among his favourites?",o:["Paneer","Tofu sushi","Falafel wrap","Stuffed aubergine"],a:0},
+{c:"Interests",q:"Which of these describes Subhajit's interests best?",o:["Coding, business ideas, studying and technology","Only gardening and fishing","Only acting and singing","Only travelling and photography"],a:0},
+{c:"Career dreams",q:"Which career area is one of Subhajit's ambitions?",o:["Coding","Marine archaeology only","Professional acting only","Fashion modelling only"],a:0},
+{c:"Career dreams",q:"Which financial-market activity does Subhajit want to learn about?",o:["Trading","Auctioneering","Antique restoration","Currency collecting only"],a:0},
+{c:"Career dreams",q:"Which career sector is part of Subhajit's goals?",o:["Banking","Film direction only","Veterinary surgery only","Airline piloting only"],a:0},
+{c:"Career dreams",q:"Which bank-exam career has Subhajit mentioned as a goal?",o:["SBI PO","Railway driver","Forest guard","Air traffic controller"],a:0},
+{c:"Career dreams",q:"What kind of work does Subhajit's coding interest suggest he wants to explore?",o:["Building software and digital tools","Repairing ships at sea","Training racehorses","Making pottery only"],a:0},
+{c:"Projects",q:"What is the name of Subhajit's planned business brand?",o:["NEXORA INDUSTRIES","NOVA FARM HOUSE","BLUE PEAK STUDIOS","DAS AIRLINES"],a:0},
+{c:"Projects",q:"What is the name of Subhajit's ice-candy business idea?",o:["Maa IceCandy","Blue Moon Café","Srinagar Bakery","Das Book Depot"],a:0},
+{c:"Projects",q:"What is the short name of Subhajit's friendship group?",o:["WAL","NXT","DAS","MCI"],a:0},
+{c:"Projects",q:"What does WAL stand for?",o:["WE ARE LEGEND","WORLD ART LEAGUE","WESTERN ATHLETICS LINE","WIDE AREA LEARNING"],a:0},
+{c:"Projects",q:"When was WE ARE LEGEND founded?",o:["17 June 2023","17 July 2022","1 January 2024","3 March 2023"],a:0},
+{c:"Projects",q:"When is the annual WE ARE LEGEND Day?",o:["17 June","3 March","15 August","25 December"],a:0},
+{c:"Friends",q:"Which person is one of Subhajit's listed close friends?",o:["Sounak Mallick","Virat Kohli","Sundar Pichai","Neeraj Chopra"],a:0},
+{c:"Friends",q:"Which person is another listed close friend?",o:["Arghya Hazra","A. R. Rahman","Rohit Sharma","P. V. Sindhu"],a:0},
+{c:"Friends",q:"Which person is the third listed close friend?",o:["Rohan Palui","Amitabh Bachchan","Ratan Tata","Lionel Messi"],a:0},
+{c:"Friends",q:"Which of these lists all three friends Subhajit named?",o:["Sounak, Arghya and Rohan","Sounak, Virat and Rohan","Arghya, Sundar and Rohan","Sounak, Arghya and Messi"],a:0},
+{c:"Personal profile",q:"Which description best matches Subhajit's interests and ambitions?",o:["A student interested in tech, coding, business and banking","A professional chef who avoids technology","A full-time musician with no study goals","A professional athlete only"],a:0},
+{c:"Personal profile",q:"What is the best way to treat a missing personal fact in this quiz?",o:["Leave it out until confirmed","Invent a likely answer","Copy a random person's details","Assume every guess is true"],a:0},
+{c:"Geography",q:"Paschim Medinipur is a district in which part of India?",o:["Eastern India","Northern India","Western India","Southern India"],a:0},
+{c:"Technology",q:"What does coding usually mean in computing?",o:["Writing instructions a computer can run","Painting a wall with colour codes only","Measuring rainfall by hand","Tuning a musical instrument"],a:0},
+{c:"Technology",q:"Which technology is commonly used to structure a web page?",o:["HTML","MP3","JPEG","ZIP"],a:0},
+{c:"Technology",q:"Which of these is a sensible way to protect private details on a public website?",o:["Avoid publishing sensitive information","Put every secret in the page source","Share passwords publicly","Use the same password everywhere"],a:0},
+{c:"Minecraft",q:"What kind of game is Minecraft?",o:["A sandbox game with building and exploration","A real-time stock exchange","A racing simulator only","A word-processing application"],a:0},
+{c:"Minecraft",q:"Which material is commonly mined in Minecraft?",o:["Coal","Cotton candy","Glass noodles","Paper clips"],a:0},
+{c:"Values",q:"What does Subhajit's stated career ambition combine?",o:["Technology, trading and banking","Acting, ballet and opera","Farming, sailing and diving","Cooking, fashion and dance"],a:0},
+{c:"Values",q:"Which is a good habit for someone balancing school and coding projects?",o:["Plan time for both learning and rest","Skip all schoolwork","Never take breaks","Start every project without a plan"],a:0},
+{c:"Values",q:"Why should a quiz certificate show the player's actual score?",o:["To make the result clear and honest","To make every player appear perfect","To hide how many questions were answered","To replace the player's name"],a:0},
+{c:"Values",q:"What makes a personal quiz question fair?",o:["It is based on a confirmed fact","It depends on an invented secret","It has two conflicting correct answers","It changes its answer after selection"],a:0},
+{c:"Values",q:"Which option best describes the purpose of the quiz?",o:["Find out how well someone knows Subhajit","Rank students by school marks","Test professional coding skills","Measure physical fitness"],a:0},
+{c:"Values",q:"What should a player do if they do not know an answer?",o:["Choose the best answer they can","Change the website's code","Assume the certificate is guaranteed","Close the browser without submitting"],a:0},
+{c:"Values",q:"Which statement about the certificate is accurate?",o:["It reports the result from this quiz","It is an official school certificate","It guarantees a job","It proves a government qualification"],a:0},
+{c:"Final challenge",q:"Which combination matches Subhajit's favourites?",o:["Blue, Minecraft, biryani and paneer","Red, chess, tacos and olives","Green, golf, sushi and dates","Black, rugby, pasta and figs"],a:0},
+{c:"Final challenge",q:"What is the central theme of this website?",o:["How well someone knows Subhajit Das","A public exam registration portal","A banking transaction service","A multiplayer Minecraft server"],a:0}
+];
+
+// Shuffle choices while preserving the correct answer.
+for (const q of questions) {
+  const correct = q.o[q.a];
+  q.o = q.o.map((text,i)=>({text,sort:Math.random()})).sort((a,b)=>a.sort-b.sort).map(x=>x.text);
+  q.a = q.o.indexOf(correct);
+}
+let answers = Array(questions.length).fill(null), current = 0, result = null, player = "", father = "";
+const $ = id => document.getElementById(id);
+function show(id){$(id).classList.remove("hidden")}
+function hide(id){$(id).classList.add("hidden")}
+function renderQuestion(){
+ const q=questions[current];
+ $("progressLabel").textContent=`Question ${current+1} of ${questions.length}`;
+ $("answeredLabel").textContent=`${answers.filter(x=>x!==null).length} answered`;
+ $("progressBar").style.width=`${(current+1)/questions.length*100}%`;
+ $("categoryLabel").textContent=q.c;
+ $("questionText").textContent=q.q;
+ $("answers").innerHTML="";
+ q.o.forEach((opt,i)=>{
+   const b=document.createElement("button"); b.className="answer"+(answers[current]===i?" selected":""); b.type="button";
+   const letter=document.createElement("span");letter.className="letter";letter.textContent=String.fromCharCode(65+i);
+   const text=document.createElement("span");text.textContent=opt;b.append(letter,text);
+   b.onclick=()=>{answers[current]=i;renderQuestion()};$("answers").appendChild(b);
+ });
+ $("backBtn").disabled=current===0;
+ $("nextBtn").classList.toggle("hidden",current===questions.length-1);
+ $("finishBtn").classList.toggle("hidden",current!==questions.length-1);
+ $("nextBtn").disabled=answers[current]===null;
+ $("finishBtn").disabled=answers[current]===null;
+}
+function gradeFor(p){
+ if(p>=90)return ["S","Subhajit Expert"];
+ if(p>=80)return ["A","True Legend"];
+ if(p>=65)return ["B","Close Friend"];
+ if(p>=50)return ["C","Good Acquaintance"];
+ if(p>=35)return ["D","Still Learning"];
+ return ["E","Mystery Solver"];
+}
+function finish(){
+ if(answers.some(a=>a===null)){alert("Please answer every question before finishing.");return}
+ const correct=questions.reduce((n,q,i)=>n+(answers[i]===q.a?1:0),0);
+ const pct=Math.round(correct/questions.length*100),[grade,performance]=gradeFor(pct);
+ result={correct,pct,grade,performance};
+ hide("quiz");show("results");show("certificateCard");show("letterCard");hide("reviewCard");
+ $("scoreText").textContent=`${correct}/${questions.length}`;$("percentageText").textContent=`${pct}%`;
+ $("gradeText").textContent=`Grade ${grade} — ${performance}`;
+ $("performanceText").textContent=pct>=90?"Outstanding! You know Subhajit exceptionally well.":pct>=80?"Excellent result! You know many details about Subhajit.":pct>=65?"Great effort! You know Subhajit quite well.":pct>=50?"Good attempt! There is still more to learn.":pct>=35?"Keep learning more about Subhajit and try again.":"A mystery remains! Talk to Subhajit and give it another try.";
+ $("certPlayer").textContent=player;$("certFather").textContent=father||"Not provided";
+ $("certTotal").textContent=questions.length;$("certCorrect").textContent=`${correct} / ${questions.length}`;
+ $("certPercent").textContent=`${pct}%`;$("certGrade").textContent=`${grade} — ${performance}`;$("certPerformance").textContent=$("performanceText").textContent;
+ $("personalLetter").textContent=`Dear ${player},\n\nThank you for taking the “How Well Do You Know Subhajit Das?” challenge. You answered ${correct} out of ${questions.length} questions correctly, earning ${pct}% and Grade ${grade} — ${performance}.\n\nEvery friendship grows through curiosity, conversations and shared memories. Whether you scored high or found a few surprises, this quiz is a fun way to learn more about Subhajit’s interests, dreams and favourite things.\n\nKeep being curious, keep supporting your friends, and remember that the best way to know someone is to spend time with them and listen.\n\nWith best wishes,\nThe Subhajit Das Quiz`;
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function shareText(){return `How Well Do You Know Subhajit Das?\nPlayer: ${player}\nFather's name: ${father||"Not provided"}\nScore: ${result.correct}/${questions.length} (${result.pct}%)\nGrade: ${result.grade} — ${result.performance}\nCan you beat my score?`}
+async function share(text){
+ if(navigator.share){try{await navigator.share({title:"How Well Do You Know Subhajit Das?",text});return}catch(e){if(e.name==="AbortError")return}}
+ try{await navigator.clipboard.writeText(text);alert("Result copied! You can paste it into WhatsApp or another app.")}catch(e){window.prompt("Copy your result:",text)}
+}
+$("startBtn").onclick=()=>{
+ player=$("playerName").value.trim();father=$("playerFather").value.trim();
+ if(!player){alert("Please enter the player's name first.");$("playerName").focus();return}
+ hide("welcome");show("quiz");current=0;renderQuestion();window.scrollTo({top:0,behavior:"smooth"});
+};
+$("backBtn").onclick=()=>{if(current>0){current--;renderQuestion()}};
+$("nextBtn").onclick=()=>{if(current<questions.length-1){current++;renderQuestion()}};
+$("finishBtn").onclick=finish;
+$("shareBtn").onclick=()=>share(shareText());
+$("certShareBtn").onclick=()=>share(shareText()+"\nCertificate: How Well Do You Know Subhajit Das?");
+$("letterShareBtn").onclick=()=>share($("personalLetter").textContent);
+$("printBtn").onclick=()=>window.print();$("certPrintBtn").onclick=()=>window.print();
+$("reviewBtn").onclick=()=>{
+ hide("results");hide("certificateCard");hide("letterCard");show("reviewCard");
+ const list=$("reviewList");list.innerHTML="";
+ questions.forEach((q,i)=>{const d=document.createElement("div");d.style.cssText="padding:12px 0;border-bottom:1px solid #e2e8f0";
+ const title=document.createElement("strong");title.textContent=`${i+1}. ${q.q}`;const detail=document.createElement("p");detail.style.margin="6px 0 0";detail.textContent=`Your answer: ${q.o[answers[i]]} ${answers[i]===q.a?"✓":"—"} | Correct answer: ${q.o[q.a]}`;detail.style.color=answers[i]===q.a?"#166534":"#b91c1c";d.append(title,detail);list.appendChild(d)});
+ window.scrollTo({top:0,behavior:"smooth"});
+};
+$("backToResultBtn").onclick=()=>{hide("reviewCard");show("results");show("certificateCard");show("letterCard")};
+</script>
+</body>
+</html>
